@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apex — Privacy Policy</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1c1c1e;
+    --muted: #6a6a70;
+    --rule: #e3e3e8;
+    --accent: #2e7bff;
+    --card: #f6f6f8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f0f11;
+      --fg: #ececf0;
+      --muted: #9a9aa2;
+      --rule: #2a2a30;
+      --accent: #5c9bff;
+      --card: #17171b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto;
+    padding: 3rem 1.25rem 5rem;
+    max-width: 46rem;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .35rem; letter-spacing: -.02em; }
+  h2 { font-size: 1.2rem; margin: 2.5rem 0 .6rem; letter-spacing: -.01em; }
+  .updated { color: var(--muted); font-size: .9rem; margin: 0 0 2rem; }
+  .summary {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 1.1rem 1.25rem;
+    margin: 0 0 2rem;
+  }
+  .summary p { margin: 0 0 .6rem; }
+  .summary p:last-child { margin-bottom: 0; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  a { color: var(--accent); }
+  code { background: var(--card); padding: .1em .35em; border-radius: 4px; font-size: .9em; }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0 1.5rem; }
+  footer { color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+
+<h1>Apex — Privacy Policy</h1>
+<p class="updated">Last updated: 7 August 2026</p>
+
+<div class="summary">
+  <p><strong>The short version.</strong> Apex records motorcycle rides on your iPhone and Apple Watch. Your rides stay on your own devices and in your own iCloud account.</p>
+  <p>There are no accounts, no advertising, no analytics, and no third-party tracking SDKs. The developer cannot see your rides, your location, or your data.</p>
+  <p>One piece of information leaves your devices: when a ride finishes, its coordinates are sent to a weather service to look up the conditions. That is described in full below.</p>
+</div>
+
+<h2>Who this policy covers</h2>
+<p>This policy applies to the Apex iPhone app, its Apple Watch app, and its Live Activity widget (together, “the app”). It is provided by the app's developer, the “we” below.</p>
+
+<h2>What the app records</h2>
+<ul>
+  <li><strong>Precise location.</strong> While a ride is recording, the app reads GPS to measure speed, distance, altitude and the route you took. This continues in the background so your ride keeps logging with your phone in a pocket or mount.</li>
+  <li><strong>Motion data.</strong> The app reads the accelerometer and gyroscope to measure G-force, lean angle and acceleration runs.</li>
+  <li><strong>Ride and vehicle information you enter.</strong> Vehicle names, service schedules, odometer readings, trip titles and similar.</li>
+</ul>
+
+<h2>Where it is stored</h2>
+<p>All of it is stored <strong>on your device</strong>. If iCloud is enabled on your Apple Account, it also syncs through <strong>your own private iCloud database</strong> so your iPhone shows the same library across your devices. That database belongs to your Apple Account. We have no access to it, and neither does anyone else.</p>
+<p>If you turn on automatic backups, the app also writes a backup file into its own Documents folder on your device, which you can see and manage in the Files app. That file never leaves your device unless you move it yourself.</p>
+
+<h2>What leaves your devices</h2>
+<p>Exactly one thing. When a ride is recorded, the app sends the ride's <strong>latitude and longitude</strong> over HTTPS to <a href="https://open-meteo.com" rel="noopener">Open-Meteo</a> to retrieve the temperature and weather conditions at that place. The request contains only those coordinates. It carries no name, no account, no device identifier and nothing that identifies you, because the app has no account system and sends no identifier. Open-Meteo's own privacy terms apply to that request; see <a href="https://open-meteo.com/en/terms" rel="noopener">open-meteo.com/en/terms</a>.</p>
+<p>The app makes no other network requests of any kind.</p>
+
+<h2>Apple Watch and HealthKit</h2>
+<p>The watch app talks to the iPhone app over Apple's device-to-device connection. That traffic stays between your own paired devices.</p>
+<p>The watch app starts a <strong>workout session</strong> while you ride. This is done for one technical reason: it is the only mechanism watchOS provides that keeps an app on screen for the length of a ride instead of returning to the watch face. <strong>The app reads no health data and writes no health data.</strong> Nothing is saved to the Health app, and nothing from Health is used, shared or transmitted.</p>
+
+<h2>Purchases</h2>
+<p>Apex Pro is a one-time purchase handled entirely by Apple's App Store. Payment is processed by Apple; we never see or receive your payment details. The app only ever asks Apple whether the purchase is active.</p>
+
+<h2>Photos and notifications</h2>
+<ul>
+  <li><strong>Photos.</strong> The app asks to add to your photo library only at the moment you choose to save a shareable ride card. It never reads your library.</li>
+  <li><strong>Notifications.</strong> If you allow them, the app sends local notifications from your own device — for example when a ride is detected or a service interval comes due. No notification is sent from a server.</li>
+</ul>
+
+<h2>Tracking, advertising and analytics</h2>
+<p>None. The app contains no advertising, no analytics or crash-reporting SDK, and no third-party tracking of any kind. It does not track you across apps or websites, and it collects nothing for marketing.</p>
+
+<h2>Children</h2>
+<p>Apex is not directed at children and collects no information about anyone's age or identity.</p>
+
+<h2>Your control over your data</h2>
+<p>Because the data lives on your devices and in your own iCloud account, you control it directly:</p>
+<ul>
+  <li>Delete individual rides, routes or vehicles inside the app.</li>
+  <li>Revoke location, motion, notification or photo access at any time in iOS Settings.</li>
+  <li>Export your library to a JSON backup, or delete that backup file, from the Files app.</li>
+  <li>Deleting the app removes its data from the device; iCloud data can be removed from your Apple Account's iCloud storage settings.</li>
+</ul>
+<p>We hold no copy of your data, so there is nothing for us to retrieve, correct or delete on your behalf. If you are in a jurisdiction with statutory data rights (for example the UK or EU GDPR), the practical effect is that the controls above are complete — there is no server-side copy for a request to reach.</p>
+
+<h2>Changes to this policy</h2>
+<p>If the app's data handling changes, this page is updated and the date at the top changes with it. Material changes will also be noted in the app's release notes.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:emanuelemontisci@icloud.com">emanuelemontisci@icloud.com</a></p>
+
+<hr>
+<footer>Apex — recorded on your wrist, kept on your device.</footer>
+
+</body>
+</html>
