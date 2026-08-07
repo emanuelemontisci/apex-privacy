@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apex — Support</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff; --fg: #1c1c1e; --muted: #6a6a70;
+    --rule: #e3e3e8; --accent: #2e7bff; --card: #f6f6f8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f0f11; --fg: #ececf0; --muted: #9a9aa2;
+            --rule: #2a2a30; --accent: #5c9bff; --card: #17171b; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto; padding: 3rem 1.25rem 5rem; max-width: 46rem;
+    background: var(--bg); color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .35rem; letter-spacing: -.02em; }
+  h2 { font-size: 1.15rem; margin: 2.25rem 0 .5rem; letter-spacing: -.01em; }
+  .lede { color: var(--muted); margin: 0 0 2rem; }
+  .contact {
+    background: var(--card); border: 1px solid var(--rule);
+    border-radius: 12px; padding: 1.1rem 1.25rem; margin: 0 0 2rem;
+  }
+  .contact p { margin: 0; }
+  p { margin: .5rem 0; }
+  a { color: var(--accent); }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 3rem 0 1.5rem; }
+  footer { color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+
+<h1>Apex — Support</h1>
+<p class="lede">Questions, problems or ideas — write and you'll get a reply.</p>
+
+<div class="contact">
+  <p><strong>Email:</strong> <a href="mailto:emanuelemontisci@icloud.com">emanuelemontisci@icloud.com</a></p>
+</div>
+
+<h2>The ride doesn't record while my phone is in my pocket</h2>
+<p>Apex needs location access set to <strong>Always</strong>. With “While Using the App”, iOS stops feeding the app the moment the screen locks and the ride stops logging. Open iOS Settings → Apex → Location and choose Always.</p>
+
+<h2>The watch goes back to the clock face during a ride</h2>
+<p>The watch app keeps itself on screen by starting a workout session, which is the only mechanism watchOS provides for this. If you declined the Health permission it can't, and watchOS takes the screen back after a couple of minutes. On your iPhone: Watch app → Privacy → Health, and allow Apex to add workouts. Nothing is written to Health — the session exists purely to hold the screen.</p>
+
+<h2>My rides aren't syncing between devices</h2>
+<p>Sync uses your own iCloud account, so both devices have to be signed in to the same Apple Account with iCloud Drive on. Settings → Data &amp; backup in the app shows what it thinks is happening, including the reason when sync isn't running.</p>
+
+<h2>I bought Apex Pro and it isn't unlocked</h2>
+<p>Open Settings → Apex Pro and tap <strong>Restore Purchase</strong>. The purchase is tied to your Apple Account, so it restores on every device signed in to it. It is a one-time purchase — there is no subscription and nothing renews.</p>
+
+<h2>I lost a ride, or I'm changing phone</h2>
+<p>Settings → Data &amp; backup → Export writes your whole library — vehicles, rides, GPS tracks and routes — to a single file you can keep or move. Import adds anything missing without touching what's already there. Turn on Auto-backup and the file stays current on its own.</p>
+
+<h2>How do I delete my data?</h2>
+<p>Everything lives on your device and in your own iCloud account; we hold no copy. Delete individual rides in the app, or delete the app to remove its data from the device. iCloud data can be removed from your Apple Account's storage settings.</p>
+
+<hr>
+<footer>See also the <a href="./">privacy policy</a>.</footer>
+
+</body>
+</html>
